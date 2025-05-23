@@ -1,10 +1,12 @@
 import { Sequelize } from "sequelize";
+import pg from "pg";
 import dotenv from "dotenv";
 
 dotenv.config(); // Load environment variables from .env file
 
 const sequelize = new Sequelize({
   dialect: "postgres",
+  dialectModule: pg,
   host: process.env.PG_HOST || "localhost",
   // port: process.env.DB_PORT || 5432,
   database: process.env.PGDATABASE || "Sentinel",
