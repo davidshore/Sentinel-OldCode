@@ -5,8 +5,8 @@ import logger from "morgan";
 import indexRouter from "./routes/index.js";
 // import usersRouter from "./routes/users.js";
 // import dataRoutes from "./routes/data.js";
-import { fileURLToPath } from "url";
-import { dirname } from "path";
+// import { fileURLToPath } from "url";
+// import { dirname } from "path";
 // import authRoutes from "./routes/auth.js";
 import dotenv from "dotenv";
 import cors from "cors";
@@ -14,11 +14,11 @@ import cors from "cors";
 dotenv.config();
 
 const app = express();
-const PORT = process.env.PORT || 8766; //8766;
+const PORT = process.env.PORT || 3000; //8766;
 
 // För att kunna använda __dirname i ES Modules
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = dirname(__filename);
+// const __filename = fileURLToPath(import.meta.url);
+// const __dirname = dirname(__filename);
 
 // Middleware
 app.use(logger("dev"));
