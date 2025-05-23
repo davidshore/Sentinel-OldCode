@@ -2,7 +2,7 @@ import express from "express";
 import path from "path";
 import cookieParser from "cookie-parser";
 import logger from "morgan";
-import indexRouter from "./routes/index.js";
+import router from "./routes.js";
 // import usersRouter from "./routes/users.js";
 // import dataRoutes from "./routes/data.js";
 // import { fileURLToPath } from "url";
@@ -29,7 +29,7 @@ app.use(express.static(path.join(__dirname, "public")));
 app.use(cors());
 
 // Routers
-app.use("/", indexRouter);
+app.use("/", router);
 // app.use("/users", usersRouter);
 // app.use("/api", dataRoutes);
 // app.use("/auth", authRoutes);
