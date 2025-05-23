@@ -3,7 +3,7 @@ import pg from "pg";
 import dotenv from "dotenv";
 
 dotenv.config(); // Load environment variables from .env file
-console.log("DATABASE_URL:", process.env.DATABASE_URL);
+// console.log("DATABASE_URL:", process.env.DATABASE_URL);
 const sequelize = new Sequelize(process.env.DATABASE_URL, {
   dialect: "postgres",
   dialectModule: pg,
