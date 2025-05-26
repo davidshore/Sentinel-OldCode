@@ -14,8 +14,8 @@ import { authenticateToken } from "./middlewares/authenticateToken.js";
 const router = express.Router();
 
 // Auth
-// router.post("/auth/register", registerUser);
-// router.post("/auth/login", loginUser);
+router.post("/auth/register", registerUser);
+router.post("/auth/login", loginUser);
 
 // // User profile
 // router.get("/auth/me", authenticateToken, getMe);
