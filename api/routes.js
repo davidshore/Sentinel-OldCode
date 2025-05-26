@@ -29,6 +29,8 @@ router.post("/auth/login", loginUser);
 // index
 router.get("/", (req, res) => res.send("Express on Vercel"));
 
+router.get("/test", (req, res) => res.send("Express on Vercel2"));
+
 /* GET users listing. */
 router.get("/users", (req, res, next) => {
   res.send("respond with a resource");
