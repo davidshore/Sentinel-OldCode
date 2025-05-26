@@ -31,6 +31,8 @@ router.get("/", (req, res) => res.send("Express on Vercel"));
 
 router.get("/test", (req, res) => res.send("Express on Vercel2"));
 
+router.post("/test2", registerUser);
+
 /* GET users listing. */
 router.get("/users", (req, res, next) => {
   res.send("respond with a resource");
